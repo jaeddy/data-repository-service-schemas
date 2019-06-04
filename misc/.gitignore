@@ -101,4 +101,15 @@ spec/
 web_deploy/
 node_modules/
 
-.DS_Store
+# Non-pages content
+python
+setup.py
+requirements.txt
+gradle
+build.gradle
+settings.gradle
+gradlew
+scripts
+openapi
+
+
