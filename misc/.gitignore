@@ -111,5 +111,10 @@ settings.gradle
 gradlew
 scripts
 openapi
+package.json
+package-lock.json
+Makefile
+merge_yaml.py
+.travis.yml
 
 
