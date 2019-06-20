@@ -102,6 +102,7 @@ web_deploy/
 node_modules/
 
 # Non-pages content
+docs/asciidoc/
 python
 setup.py
 requirements.txt
@@ -110,6 +111,7 @@ build.gradle
 settings.gradle
 gradlew
 scripts
+misc
 openapi
 package.json
 package-lock.json
