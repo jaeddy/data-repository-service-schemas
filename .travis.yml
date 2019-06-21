@@ -48,7 +48,7 @@ jobs:
       - chmod +x scripts/stagepages.sh
       script:
       - "./scripts/fetchpages.sh"
-      - "./gradlew installSwagger asciidoctor"
+      - "./gradlew installSwagger buildSwagger asciidoctor"
       - "./scripts/stagepages.sh"
       before_deploy:
       - "mv misc/.gitignore .gitignore"
