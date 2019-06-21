@@ -18,6 +18,6 @@ if [ "$TRAVIS_BRANCH" != "gh-pages" ]; then
 fi
 
 # do some cleanup, these cause the gh-pages deploy to break
-# rm -rf node_modules
-# rm -rf web_deploy
-# rm -rf spec
+rm -rf node_modules
+rm -rf web_deploy
+rm -rf spec
