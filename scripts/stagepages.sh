@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-
-set -e
-set -v
+set -ev
 
 if [ "$TRAVIS_BRANCH" != "gh-pages" ]; then
   if [ "$TRAVIS_BRANCH" == "master" ]; then
@@ -9,7 +7,8 @@ if [ "$TRAVIS_BRANCH" != "gh-pages" ]; then
   else
     branch=$(echo "$TRAVIS_BRANCH" | awk '{print tolower($0)}')
     branchpath="preview/$branch"
-  fi  
+  fi
+  echo $branchpath
   mkdir -p "$branchpath/docs"
   cp docs/html5/index.html "$branchpath/docs/"
   cp docs/pdf/index.pdf "$branchpath/docs/"
