@@ -18,7 +18,7 @@ elif [ "$TRAVIS_BRANCH" != "gh-pages" ]; then
     cp docs/_swagger-ui-template.html "$branchpath/swagger-ui/index.html"
     # Vendor swagger-ui
     npm install swagger-ui-dist@3.20.5
-	  mv $(node -e 'console.log(path.dirname(require.resolve("swagger-ui-dist")));') "_swagger_ui/"
+	  mv $(node -e 'console.log(path.dirname(require.resolve("swagger-ui-dist")));') "_swagger-ui/"
 fi
 
 # do some cleanup, these cause the gh-pages deploy to break
